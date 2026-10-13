@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isla Azul Tours · Turismo en Roatán, Honduras</title>
+  <meta name="description" content="Isla Azul Tours: tours, hoteles y paquetes de viaje en Roatán, Islas de la Bahía, Honduras. Cotiza en Lempiras y descarga tu cotización en PDF al instante." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <nav id="main-nav">
+    <div class="nav__header">
+      <a href="#home" class="logo"><i class="ri-sailboat-fill"></i> Isla Azul <span>Tours</span></a>
+      <button class="nav__menu__btn" id="menu-btn" aria-label="Abrir menú"><i class="ri-menu-line"></i></button>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#destinos">Destinos</a></li>
+      <li><a href="#hoteles">Hoteles</a></li>
+      <li><a href="#paquetes">Paquetes</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li class="nav__mobile-cta"><a href="#cotizador">Cotizar</a></li>
+    </ul>
+    <a href="#cotizador" class="btn nav__btn"><i class="ri-calculator-line"></i> Cotizar ahora</a>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header id="home" class="hero">
+    <video class="hero__video" autoplay muted loop playsinline webkit-playsinline>
+      <source src="videos/playa-turquesa.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__tag"><i class="ri-map-pin-2-fill"></i> Roatán · Islas de la Bahía · Honduras</p>
+      <h1>Vive el Caribe <em>hondureño</em> como nunca antes</h1>
+      <p class="hero__text">Tours, hoteles y paquetes todo incluido en la isla más hermosa de Honduras. Cotiza en Lempiras y recibe tu PDF al instante.</p>
+      <div class="hero__btns">
+        <a href="#cotizador" class="btn btn--lg"><i class="ri-file-pdf-2-line"></i> Cotizar mi viaje</a>
+        <a href="#paquetes" class="btn btn--ghost btn--lg">Ver paquetes <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div><strong>16+</strong><span>Tours y lugares</span></div>
+      <div><strong>8</strong><span>Hoteles aliados</span></div>
+      <div><strong>12k</strong><span>Viajeros felices</span></div>
+      <div><strong>4.9</strong><span>Calificación</span></div>
+    </div>
+  </header>
+
+  <!-- ================= POR QUÉ ================= -->
+  <section class="section__container why__container" id="nosotros">
+    <div class="why__grid">
+      <article class="why__card"><span><i class="ri-shield-check-line"></i></span><h4>Operador local certificado</h4><p>Somos roatanecos. Registrados ante el Instituto Hondureño de Turismo.</p></article>
+      <article class="why__card"><span><i class="ri-money-dollar-circle-line"></i></span><h4>Precios en Lempiras</h4><p>Sin sorpresas: cotiza en HNL con ISV incluido y equivalente en dólares.</p></article>
+      <article class="why__card"><span><i class="ri-file-pdf-2-line"></i></span><h4>Cotización PDF al instante</h4><p>Arma tu viaje y descarga o comparte tu cotización en segundos.</p></article>
+      <article class="why__card"><span><i class="ri-customer-service-2-line"></i></span><h4>Atención 24/7</h4><p>Te acompañamos por WhatsApp antes, durante y después de tu viaje.</p></article>
+    </div>
+  </section>
+
+  <!-- ================= DESTINOS ================= -->
+  <section class="section__container" id="destinos">
+    <p class="section__kicker">Lugares turísticos</p>
+    <h2 class="section__header">Descubre Roatán</h2>
+    <p class="section__description">Playas de arena blanca, el segundo arrecife más grande del mundo, selva tropical y cultura garífuna.</p>
+    <div class="filter__bar" id="destino-filters">
+      <button class="chip active" data-cat="Todos">Todos</button>
+      <button class="chip" data-cat="Playas">Playas</button>
+      <button class="chip" data-cat="Mar">Mar</button>
+      <button class="chip" data-cat="Naturaleza">Naturaleza</button>
+      <button class="chip" data-cat="Aventura">Aventura</button>
+      <button class="chip" data-cat="Cultura">Cultura</button>
+    </div>
+    <div class="destino__grid" id="destino-grid"></div>
+  </section>
+
+  <!-- ================= SHOWCASE ================= -->
+  <section class="showcase" id="showcase">
+    <div class="section__container showcase__container">
+      <div class="showcase__image">
+        <video src="videos/isla-muelle.mp4" autoplay muted loop playsinline webkit-playsinline aria-label="Isla con agua turquesa en el Caribe"></video>
+        <video src="videos/isla-atardecer.mp4" autoplay muted loop playsinline webkit-playsinline aria-label="Isla al atardecer" class="showcase__image--small"></video>
+      </div>
+      <div class="showcase__content">
+        <p class="section__kicker">Por qué Roatán</p>
+        <h3>Una isla, mil experiencias</h3>
+        <p>Roatán es la joya de las Islas de la Bahía. Rodeada por el Arrecife Mesoamericano, ofrece algunos de los mejores sitios de buceo del planeta, playas como West Bay y Camp Bay, y una mezcla única de culturas isleña, garífuna y latina.</p>
+        <ul class="showcase__list">
+          <li><i class="ri-check-double-line"></i> Agua a 28 °C todo el año</li>
+          <li><i class="ri-check-double-line"></i> Vuelos directos al aeropuerto RTB</li>
+          <li><i class="ri-check-double-line"></i> Ferry diario desde La Ceiba</li>
+          <li><i class="ri-check-double-line"></i> Ideal para familias, parejas y aventureros</li>
+        </ul>
+        <a href="#cotizador" class="btn">Planear mi viaje <i class="ri-arrow-right-line"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOTELES ================= -->
+  <section class="section__container" id="hoteles">
+    <p class="section__kicker">Hospedaje</p>
+    <h2 class="section__header">Hoteles en Roatán</h2>
+    <p class="section__description">Resorts frente al mar, bungalows sobre el agua y hoteles boutique. Precio por habitación por noche (2 personas).</p>
+    <div class="hotel__grid" id="hotel-grid"></div>
+  </section>
+
+  <!-- ================= PAQUETES ================= -->
+  <section class="paquetes__section" id="paquetes">
+    <div class="section__container">
+      <p class="section__kicker section__kicker--light">Paquetes de viaje</p>
+      <h2 class="section__header section__header--light">Paquetes listos para disfrutar</h2>
+      <p class="section__description section__description--light">Precios por persona en ocupación doble. Niños de 3 a 11 años pagan 50 %.</p>
+      <div class="paquete__grid" id="paquete-grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= COTIZADOR ================= -->
+  <section class="section__container" id="cotizador">
+    <p class="section__kicker">Cotizador en línea</p>
+    <h2 class="section__header">Cotiza tu viaje en Lempiras</h2>
+    <p class="section__description">Elige paquete, hotel, tours y extras. Genera tu cotización en PDF al instante.</p>
+
+    <form class="quote" id="quote-form" novalidate>
+      <div class="quote__main">
+        <!-- Paso 1 -->
+        <fieldset class="quote__step">
+          <legend><span>1</span> Datos del viajero</legend>
+          <div class="form__grid">
+            <label>Nombre completo *<input type="text" id="q-nombre" required placeholder="Ej. María López" /></label>
+            <label>Teléfono / WhatsApp<input type="tel" id="q-telefono" placeholder="+504 0000-0000" /></label>
+            <label>Correo electrónico<input type="email" id="q-correo" placeholder="correo@ejemplo.com" /></label>
+            <label>Fecha de llegada *<input type="date" id="q-fecha" required /></label>
+            <label>Adultos<input type="number" id="q-adultos" min="1" max="30" value="2" /></label>
+            <label>Niños (3-11 años)<input type="number" id="q-ninos" min="0" max="20" value="0" /></label>
+          </div>
+        </fieldset>
+
+        <!-- Paso 2 -->
+        <fieldset class="quote__step">
+          <legend><span>2</span> Paquete de viaje <small>(opcional)</small></legend>
+          <div class="pick__grid" id="q-paquetes"></div>
+        </fieldset>
+
+        <!-- Paso 3 -->
+        <fieldset class="quote__step">
+          <legend><span>3</span> Hotel adicional <small>(opcional)</small></legend>
+          <div class="form__grid">
+            <label>Hotel
+              <select id="q-hotel"><option value="">— Sin hotel adicional —</option></select>
+            </label>
+            <label>Noches<input type="number" id="q-noches" min="1" max="30" value="3" /></label>
+            <label>Habitaciones<input type="number" id="q-habitaciones" min="1" max="15" value="1" /></label>
+          </div>
+        </fieldset>
+
+        <!-- Paso 4 -->
+        <fieldset class="quote__step">
+          <legend><span>4</span> Tours y lugares turísticos</legend>
+          <p class="hint">Precio por adulto · niños pagan 50 %.</p>
+          <div class="tour__checks" id="q-tours"></div>
+        </fieldset>
+
+        <!-- Paso 5 -->
+        <fieldset class="quote__step">
+          <legend><span>5</span> Extras</legend>
+          <div class="extras">
+            <label class="switch"><input type="checkbox" id="q-traslado" /> <span></span> Traslado aeropuerto RTB (ida y vuelta) <b id="lbl-traslado"></b></label>
+            <label class="switch"><input type="checkbox" id="q-ferry" /> <span></span> Ferry La Ceiba ⇄ Roatán <b id="lbl-ferry"></b></label>
+            <label class="switch"><input type="checkbox" id="q-seguro" /> <span></span> Seguro de viaje por persona <b id="lbl-seguro"></b></label>
+          </div>
+          <label class="full">Comentarios
+            <textarea id="q-notas" rows="3" placeholder="Celebración, alergias, peticiones especiales..."></textarea>
+          </label>
+        </fieldset>
+      </div>
+
+      <!-- Resumen -->
+      <aside class="quote__summary" id="quote-summary">
+        <h4><i class="ri-receipt-line"></i> Resumen de cotización</h4>
+        <ul class="summary__list" id="summary-list"><li class="empty">Selecciona un paquete, hotel o tour para comenzar.</li></ul>
+        <div class="summary__totals">
+          <div><span>Subtotal</span><b id="sum-subtotal">L 0.00</b></div>
+          <div><span>ISV (15 %)</span><b id="sum-isv">L 0.00</b></div>
+          <div class="grand"><span>Total</span><b id="sum-total">L 0.00</b></div>
+          <div class="usd"><span>Equivalente aprox.</span><b id="sum-usd">$ 0.00</b></div>
+        </div>
+        <button type="button" class="btn btn--block" id="btn-pdf"><i class="ri-file-pdf-2-line"></i> Ver cotización en PDF</button>
+        <button type="button" class="btn btn--outline btn--block" id="btn-whatsapp"><i class="ri-whatsapp-line"></i> Enviar por WhatsApp</button>
+        <button type="button" class="btn btn--text btn--block" id="btn-reset"><i class="ri-refresh-line"></i> Limpiar</button>
+        <p class="summary__note">Precios referenciales en Lempiras (HNL). Sujetos a disponibilidad.</p>
+      </aside>
+    </form>
+  </section>
+
+  <!-- ================= GALERÍA / DESCARGAS ================= -->
+  <section class="galeria__section" id="galeria">
+    <div class="section__container">
+      <p class="section__kicker">Galería y descargas</p>
+      <h2 class="section__header">Videos de las playas de Roatán</h2>
+      <p class="section__description">Descarga cada video individualmente, o todo junto en un archivo ZIP.</p>
+
+      <div class="download__actions">
+        <button class="btn" id="btn-zip-vid"><i class="ri-film-line"></i> Descargar todos los videos (ZIP)</button>
+        <button class="btn btn--dark" id="btn-zip-web"><i class="ri-folder-zip-line"></i> Descargar sitio web completo (ZIP)</button>
+      </div>
+      <p class="zip__status" id="zip-status" role="status"></p>
+
+      <h3 class="sub__title"><i class="ri-film-line"></i> Videos</h3>
+      <div class="video__grid" id="video-grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIOS ================= -->
+  <section class="section__container" id="testimonios">
+    <p class="section__kicker">Opiniones</p>
+    <h2 class="section__header">Lo que dicen nuestros viajeros</h2>
+    <div class="testi__grid">
+      <blockquote class="testi__card"><p>"El paquete Luna de Miel fue perfecto. La cena en la playa de West Bay, inolvidable."</p><footer><b>Andrea y Carlos</b> · Tegucigalpa</footer></blockquote>
+      <blockquote class="testi__card"><p>"Mis hijos amaron los perezosos y los delfines. Todo puntual y muy bien organizado."</p><footer><b>Familia Mejía</b> · San Pedro Sula</footer></blockquote>
+      <blockquote class="testi__card"><p>"Buceo de primer nivel. Los guías conocen cada rincón del arrecife."</p><footer><b>Luis R.</b> · La Ceiba</footer></blockquote>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contacto">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <a href="#home" class="logo logo--light"><i class="ri-sailboat-fill"></i> Isla Azul <span>Tours</span></a>
+        <p>Tu agencia de turismo local en Roatán. Creamos experiencias inolvidables en el Caribe hondureño desde 2014.</p>
+        <ul class="footer__socials">
+          <li><a href="#!" aria-label="Facebook"><i class="ri-facebook-fill"></i></a></li>
+          <li><a href="#!" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+          <li><a href="#!" aria-label="TikTok"><i class="ri-tiktok-line"></i></a></li>
+          <li><a id="footer-wa" href="#!" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Enlaces</h4>
+        <ul class="footer__links">
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#hoteles">Hoteles</a></li>
+          <li><a href="#paquetes">Paquetes</a></li>
+          <li><a href="#cotizador">Cotizador</a></li>
+          <li><a href="#galeria">Descargas</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul class="footer__links">
+          <li><i class="ri-phone-fill"></i> <span id="ft-tel"></span></li>
+          <li><i class="ri-mail-line"></i> <span id="ft-mail"></span></li>
+          <li><i class="ri-map-pin-2-fill"></i> <span id="ft-dir"></span></li>
+          <li><i class="ri-time-line"></i> Lunes a domingo · 7:00 a 20:00</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Boletín</h4>
+        <p>Recibe ofertas exclusivas en Lempiras.</p>
+        <form id="newsletter-form" class="newsletter">
+          <input type="email" placeholder="Tu correo" required aria-label="Correo" />
+          <button class="btn" type="submit">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bar">© <span id="year"></span> Isla Azul Tours · Roatán, Honduras. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="wa__float" id="wa-float" href="#!" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+
+  <!-- Modal PDF -->
+  <div class="modal" id="pdf-modal" aria-hidden="true">
+    <div class="modal__box">
+      <header class="modal__head">
+        <h4><i class="ri-file-pdf-2-line"></i> Tu cotización</h4>
+        <div class="modal__actions">
+          <a class="btn btn--sm" id="pdf-download" download="cotizacion.pdf"><i class="ri-download-2-line"></i> Descargar</a>
+          <a class="btn btn--sm btn--outline" id="pdf-open" target="_blank" rel="noopener"><i class="ri-external-link-line"></i> Abrir</a>
+          <button class="modal__close" id="pdf-close" aria-label="Cerrar"><i class="ri-close-line"></i></button>
+        </div>
+      </header>
+      <iframe id="pdf-frame" title="Vista previa de la cotización"></iframe>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
